@@ -14,15 +14,15 @@ android {
         debug {
             manifestPlaceholders = [ACTION: 'com.dexter.uploadservice.broadcast.status']
             //TODO ADD BASE_URL OF API
-            buildConfigField("String","BASE_URL","")
-            minifyEnabled false
+            buildConfigField("String","BASE_URL","\"http://www.test.com\"")
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         release {
             manifestPlaceholders = [ACTION: 'com.dexter.uploadservice.broadcast.status']
             //TODO ADD BASE_URL OF API
-            buildConfigField("String","BASE_URL","")
-            minifyEnabled false
+            buildConfigField("String","BASE_URL","\"http://www.test.com\"")
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
